@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Approx
-%include	/usr/lib/rpm/macros.perl
 Summary:	String-Approx perl module
 Summary(pl):	Modu³ perla String-Approx
 Name:		perl-String-Approx
 Version:	3.18
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ String-Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 ³añcuchów.
 
 %prep
-%setup -q -n String-Approx-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
