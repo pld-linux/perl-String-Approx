@@ -1,7 +1,7 @@
-#
+
 # Conditional build:
-# _without_tests - do not perform "make test"
-#
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Approx
@@ -23,12 +23,12 @@ Summary(sv):	String::Approx Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl String::Approx
 Summary(zh_CN):	String::Approx Perl Ä£¿é
 Name:		perl-String-Approx
-Version:	3.20
+Version:	3.22
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1233c5ec816a15a0fcb12b18bce7ead4
+# Source0-md5:	6ab88f26163884ab04ba42e7bdb40944
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,14 +46,16 @@ String::Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
-%{!?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
