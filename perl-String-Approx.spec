@@ -14,7 +14,7 @@ Summary(fr):	Module Perl String::Approx
 Summary(it):	Modulo di Perl String::Approx
 Summary(ja):	String::Approx Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	String::Approx ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul String::Approx
+Summary(nb):	Perlmodul String::Approx
 Summary(pl):	Modu³ Perla String::Approx
 Summary(pt):	Módulo de Perl String::Approx
 Summary(pt_BR):	Módulo Perl String::Approx
