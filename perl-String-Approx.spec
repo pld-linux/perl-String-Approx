@@ -24,11 +24,11 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl String::Approx
 Summary(zh_CN):	String::Approx Perl Ä£¿é
 Name:		perl-String-Approx
 Version:	3.19
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,7 +43,8 @@ String::Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_with_tests:%{__make} test}
@@ -59,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README README.apse
-%{perl_sitearch}/String/Approx.pm
-%dir %{perl_sitearch}/auto/String/Approx
-%{perl_sitearch}/auto/String/Approx/Approx.bs
-%attr(755,root,root) %{perl_sitearch}/auto/String/Approx/Approx.so
+%{perl_vendorarch}/String/Approx.pm
+%dir %{perl_vendorarch}/auto/String/Approx
+%{perl_vendorarch}/auto/String/Approx/Approx.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/String/Approx/Approx.so
 %{_mandir}/man3/*
