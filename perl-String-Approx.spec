@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	String
-%define	pnam	Approx
+%define		pdir	String
+%define		pnam	Approx
 Summary:	String::Approx Perl module
 Summary(cs):	Modul String::Approx pro Perl
 Summary(da):	Perlmodul String::Approx
