@@ -1,11 +1,30 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Approx
-Summary:	String::Approx perl module
-Summary(pl):	Modu³ perla String::Approx
+Summary:	String::Approx Perl module
+Summary(cs):	Modul String::Approx pro Perl
+Summary(da):	Perlmodul String::Approx
+Summary(de):	String::Approx Perl Modul
+Summary(es):	Módulo de Perl String::Approx
+Summary(fr):	Module Perl String::Approx
+Summary(it):	Modulo di Perl String::Approx
+Summary(ja):	String::Approx Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	String::Approx ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul String::Approx
+Summary(pl):	Modu³ Perla String::Approx
+Summary(pt):	Módulo de Perl String::Approx
+Summary(pt_BR):	Módulo Perl String::Approx
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl String::Approx
+Summary(sv):	String::Approx Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl String::Approx
+Summary(zh_CN):	String::Approx Perl Ä£¿é
 Name:		perl-String-Approx
-Version:	3.18
-Release:	3
+Version:	3.19
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -27,19 +46,19 @@ String::Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
+%{!?_with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-gzip -9nf ChangeLog README README.apse
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog README README.apse
 %{perl_sitearch}/String/Approx.pm
 %dir %{perl_sitearch}/auto/String/Approx
 %{perl_sitearch}/auto/String/Approx/Approx.bs
