@@ -2,7 +2,7 @@
 Summary:	String-Approx perl module
 Summary(pl):	Modu³ perla String-Approx
 Name:		perl-String-Approx
-Version:	3.09
+Version:	3.12
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -37,7 +37,7 @@ strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/String/Approx/*.so
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/String/Approx
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
