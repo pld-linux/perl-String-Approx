@@ -3,7 +3,7 @@ Summary:	String-Approx perl module
 Summary(pl):	Modu³ perla String-Approx
 Name:		perl-String-Approx
 Version:	3.15
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
