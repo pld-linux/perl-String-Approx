@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Approx
-Summary:	String-Approx perl module
-Summary(pl):	Modu³ perla String-Approx
+Summary:	String::Approx perl module
+Summary(pl):	Modu³ perla String::Approx
 Name:		perl-String-Approx
 Version:	3.18
 Release:	3
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-String-Approx lets you match and substitute strings approximately.
+String::Approx lets you match and substitute strings approximately.
 
 %description -l pl
-String-Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
+String::Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 ³añcuchów.
 
 %prep
