@@ -2,10 +2,11 @@
 Summary:	String-Approx perl module
 Summary(pl):	Modu³ perla String-Approx
 Name:		perl-String-Approx
-Version:	3.12
+Version:	3.13
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/String/String-Approx-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -26,13 +27,11 @@ String-Approx pozwala na przybli¿one dopasowywanie i zastêpowanie
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="$RPM_OPT_FLAGS"
+%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/String/Approx/*.so
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/String/Approx
@@ -40,8 +39,7 @@ strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/String/Approx/*.so
   mv -f .packlist.new .packlist
 )
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        ChangeLog README README.apse
+gzip -9nf ChangeLog README README.apse
 
 %clean
 rm -rf $RPM_BUILD_ROOT
