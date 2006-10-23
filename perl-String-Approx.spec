@@ -23,12 +23,12 @@ Summary(sv):	String::Approx Perlmodul
 Summary(uk):	Модуль для Perl String::Approx
 Summary(zh_CN):	String::Approx Perl дё©И
 Name:		perl-String-Approx
-Version:	3.25
+Version:	3.26
 Release:	1
 License:	LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f0e84d4c49f460f53aa8d5a5d44b51d6
+# Source0-md5:	fc14d72986431025125d4970dd6b7f88
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
