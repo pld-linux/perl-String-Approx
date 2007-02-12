@@ -6,22 +6,22 @@
 %define		pdir	String
 %define		pnam	Approx
 Summary:	String::Approx Perl module
-Summary(cs):	Modul String::Approx pro Perl
-Summary(da):	Perlmodul String::Approx
-Summary(de):	String::Approx Perl Modul
-Summary(es):	MÛdulo de Perl String::Approx
-Summary(fr):	Module Perl String::Approx
-Summary(it):	Modulo di Perl String::Approx
-Summary(ja):	String::Approx Perl •‚•∏•Â°º•Î
-Summary(ko):	String::Approx ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul String::Approx
-Summary(pl):	Modu≥ Perla String::Approx
-Summary(pt):	MÛdulo de Perl String::Approx
-Summary(pt_BR):	MÛdulo Perl String::Approx
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl String::Approx
-Summary(sv):	String::Approx Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl String::Approx
-Summary(zh_CN):	String::Approx Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul String::Approx pro Perl
+Summary(da.UTF-8):   Perlmodul String::Approx
+Summary(de.UTF-8):   String::Approx Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl String::Approx
+Summary(fr.UTF-8):   Module Perl String::Approx
+Summary(it.UTF-8):   Modulo di Perl String::Approx
+Summary(ja.UTF-8):   String::Approx Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   String::Approx ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul String::Approx
+Summary(pl.UTF-8):   Modu≈Ç Perla String::Approx
+Summary(pt.UTF-8):   M√≥dulo de Perl String::Approx
+Summary(pt_BR.UTF-8):   M√≥dulo Perl String::Approx
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl String::Approx
+Summary(sv.UTF-8):   String::Approx Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl String::Approx
+Summary(zh_CN.UTF-8):   String::Approx Perl Ê®°Âùó
 Name:		perl-String-Approx
 Version:	3.26
 Release:	1
@@ -36,9 +36,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 String::Approx lets you match and substitute strings approximately.
 
-%description -l pl
-String::Approx pozwala na przybliøone dopasowywanie i zastÍpowanie
-≥aÒcuchÛw.
+%description -l pl.UTF-8
+String::Approx pozwala na przybli≈ºone dopasowywanie i zastƒôpowanie
+≈Ça≈Ñcuch√≥w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
