@@ -6,22 +6,22 @@
 %define		pdir	String
 %define		pnam	Approx
 Summary:	String::Approx Perl module
-Summary(cs.UTF-8):   Modul String::Approx pro Perl
-Summary(da.UTF-8):   Perlmodul String::Approx
-Summary(de.UTF-8):   String::Approx Perl Modul
-Summary(es.UTF-8):   Módulo de Perl String::Approx
-Summary(fr.UTF-8):   Module Perl String::Approx
-Summary(it.UTF-8):   Modulo di Perl String::Approx
-Summary(ja.UTF-8):   String::Approx Perl モジュール
-Summary(ko.UTF-8):   String::Approx 펄 모줄
-Summary(nb.UTF-8):   Perlmodul String::Approx
-Summary(pl.UTF-8):   Moduł Perla String::Approx
-Summary(pt.UTF-8):   Módulo de Perl String::Approx
-Summary(pt_BR.UTF-8):   Módulo Perl String::Approx
-Summary(ru.UTF-8):   Модуль для Perl String::Approx
-Summary(sv.UTF-8):   String::Approx Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl String::Approx
-Summary(zh_CN.UTF-8):   String::Approx Perl 模块
+Summary(cs.UTF-8):	Modul String::Approx pro Perl
+Summary(da.UTF-8):	Perlmodul String::Approx
+Summary(de.UTF-8):	String::Approx Perl Modul
+Summary(es.UTF-8):	Módulo de Perl String::Approx
+Summary(fr.UTF-8):	Module Perl String::Approx
+Summary(it.UTF-8):	Modulo di Perl String::Approx
+Summary(ja.UTF-8):	String::Approx Perl モジュール
+Summary(ko.UTF-8):	String::Approx 펄 모줄
+Summary(nb.UTF-8):	Perlmodul String::Approx
+Summary(pl.UTF-8):	Moduł Perla String::Approx
+Summary(pt.UTF-8):	Módulo de Perl String::Approx
+Summary(pt_BR.UTF-8):	Módulo Perl String::Approx
+Summary(ru.UTF-8):	Модуль для Perl String::Approx
+Summary(sv.UTF-8):	String::Approx Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl String::Approx
+Summary(zh_CN.UTF-8):	String::Approx Perl 模块
 Name:		perl-String-Approx
 Version:	3.26
 Release:	1
