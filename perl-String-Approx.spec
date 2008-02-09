@@ -24,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl String::Approx
 Summary(zh_CN.UTF-8):	String::Approx Perl 模块
 Name:		perl-String-Approx
 Version:	3.26
-Release:	1
+Release:	2
 License:	LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
