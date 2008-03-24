@@ -5,40 +5,31 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	String
 %define		pnam	Approx
-Summary:	String::Approx Perl module
-Summary(cs.UTF-8):	Modul String::Approx pro Perl
-Summary(da.UTF-8):	Perlmodul String::Approx
-Summary(de.UTF-8):	String::Approx Perl Modul
-Summary(es.UTF-8):	Módulo de Perl String::Approx
-Summary(fr.UTF-8):	Module Perl String::Approx
-Summary(it.UTF-8):	Modulo di Perl String::Approx
-Summary(ja.UTF-8):	String::Approx Perl モジュール
-Summary(ko.UTF-8):	String::Approx 펄 모줄
-Summary(nb.UTF-8):	Perlmodul String::Approx
-Summary(pl.UTF-8):	Moduł Perla String::Approx
-Summary(pt.UTF-8):	Módulo de Perl String::Approx
-Summary(pt_BR.UTF-8):	Módulo Perl String::Approx
-Summary(ru.UTF-8):	Модуль для Perl String::Approx
-Summary(sv.UTF-8):	String::Approx Perlmodul
-Summary(uk.UTF-8):	Модуль для Perl String::Approx
-Summary(zh_CN.UTF-8):	String::Approx Perl 模块
+Summary:	String::Approx - Perl module for approximate matching (fuzzy matching)
+Summary(pl.UTF-8):	String::Approx - moduł Perlado dopasowywania przybliżonego (rozmytego)
 Name:		perl-String-Approx
 Version:	3.26
 Release:	2
 License:	LGPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fc14d72986431025125d4970dd6b7f88
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/String-Approx/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 String::Approx lets you match and substitute strings approximately.
+With this you can emulate errors: typing errorrs, speling errors,
+closely related vocabularies (colour color), genetic mutations (GAG
+ACT), abbreviations (McScot, MacScot).
 
 %description -l pl.UTF-8
 String::Approx pozwala na przybliżone dopasowywanie i zastępowanie
-łańcuchów.
+łańcuchów. Przy jego użyciu można emulować błędy: literrówki, błendy
+ortograficzne, bliskie sobie słowniki (colour/color), mutacje
+genetyczne (GAG ACT), skróty (McScot, MacScot).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
