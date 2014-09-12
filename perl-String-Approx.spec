@@ -57,6 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README README.apse
 %{perl_vendorarch}/String/Approx.pm
 %dir %{perl_vendorarch}/auto/String/Approx
-%{perl_vendorarch}/auto/String/Approx/Approx.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/String/Approx/Approx.so
 %{_mandir}/man3/*
