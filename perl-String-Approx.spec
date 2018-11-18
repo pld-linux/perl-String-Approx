@@ -8,12 +8,12 @@
 Summary:	String::Approx - Perl module for approximate matching (fuzzy matching)
 Summary(pl.UTF-8):	String::Approx - moduł Perlado dopasowywania przybliżonego (rozmytego)
 Name:		perl-String-Approx
-Version:	3.26
-Release:	15
+Version:	3.28
+Release:	1
 License:	LGPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fc14d72986431025125d4970dd6b7f88
+# Source0-md5:	ad98d17213344302ef7edf745a030390
 URL:		http://search.cpan.org/dist/String-Approx/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
